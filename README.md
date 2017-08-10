@@ -1,13 +1,9 @@
 impulsare/logger
 ===============================
 
-Version number: 1.0b1
-
-Author: Emmanuel Dyan
-
-
 Overview
---------
+--------------------
+
 A logger that sends its logs to rotated files + directly to console (configurable).
 
 
