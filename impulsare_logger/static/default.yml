@@ -1,4 +1,5 @@
 logger:
+    directory: /var/log
     level: WARNING
     formatter: '%(asctime)s :: %(levelname)s :: %(message)s'
     max_size: 50
