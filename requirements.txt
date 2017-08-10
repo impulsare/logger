@@ -1,2 +1,2 @@
 click
--e git+https://github.com/impulsare/config.git#egg=impulsare_config
+impulsare-config
