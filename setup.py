@@ -21,7 +21,7 @@ setup(
     name='impulsare-logger',
     version=__version__,
     description='A simple python logger that creates two handlers with a nice formatting : Stream and File',
-    long_description=long_description,
+    long_description="""A logger that sends its logs to rotated files + directly to console (configurable).""",
     url='https://github.com/impulsare/logger',
     download_url='https://github.com/impulsare/logger/tarball/' + __version__,
     license='AGPLv3',
@@ -33,7 +33,8 @@ setup(
     keywords='logger,python',
     packages=find_packages(exclude=['docs', 'tests*']),
     include_package_data=True,
-    author='Emmanuel Dyan <emmanuel@impulsare.io>, Roel Bindels <roel@impulsare.io>',
+    author='Emmanuel Dyan',
+    author_email='emmanuel@impulsare.io',
     install_requires=install_requires,
     dependency_links=dependency_links
 )

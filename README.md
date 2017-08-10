@@ -16,7 +16,7 @@ Installation / Usage
 
 To install use pip:
 ```bash
-$ pip install --upgrade -e git+https://github.com/impulsare/logger/archive/v1.0b1.zip
+$ pip install --upgrade impulsare-logger
 ```
 
 
