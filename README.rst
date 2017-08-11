@@ -7,6 +7,10 @@ impulsare/logger
 .. image:: https://scrutinizer-ci.com/g/impulsare/logger/badges/quality-score.png?b=master
     :target: https://scrutinizer-ci.com/g/impulsare/logger/
 
+.. image:: https://scrutinizer-ci.com/g/impulsare/logger/badges/coverage.png?b=master
+    :target: https://travis-ci.org/impulsare/logger
+
+
 Overview
 --------------------
 
