@@ -26,9 +26,14 @@ class Logger():
         if self.log.hasHandlers():
             return
 
+        self._add_handlers()
+
+
+    def _add_handlers(self):
         if self.config.get('handlers')['file'] is True:
             self.filename = self._get_filename()
             self.log.addHandler(self._get_file_handler())
+
         if self.config.get('handlers')['console'] is True:
             self.log.addHandler(self._get_stream_handler())
 

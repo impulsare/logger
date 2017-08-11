@@ -1,0 +1,6 @@
+logger:
+    level: WARNING
+    directory: /tmp
+    handlers:
+        console: false
+        file: false

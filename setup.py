@@ -2,9 +2,13 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '1.0b3'
+__version__ = '1.0b4'
 
 here = path.abspath(path.dirname(__file__))
+
+# Get the long description from the README file
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 # get the dependencies and installs
 with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
@@ -17,16 +21,27 @@ setup(
     name='impulsare-logger',
     version=__version__,
     description='A simple python logger that creates two handlers with a nice formatting : Stream and File',
-    long_description="""A logger that sends its logs to rotated files + directly to console (configurable).""",
+    long_description=long_description,
     url='https://github.com/impulsare/logger',
     download_url='https://github.com/impulsare/logger/tarball/' + __version__,
     license='AGPLv3',
     classifiers=[
-      'Development Status :: 4 - Beta',
-      'Intended Audience :: Developers',
-      'Programming Language :: Python :: 3',
+        'Development Status :: 4 - Beta',
+        # 'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'Intended Audience :: Information Technology',
+        'Intended Audience :: Science/Research',
+        'Intended Audience :: System Administrators',
+        'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Topic :: Scientific/Engineering',
+        'Topic :: System :: Distributed Computing',
+        'Topic :: System :: Systems Administration',
     ],
-    keywords='logger,python',
+    keywords='logger,python,logging,impulsare',
     packages=find_packages(exclude=['docs', 'tests*']),
     include_package_data=True,
     author='Emmanuel Dyan',

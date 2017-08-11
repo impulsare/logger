@@ -49,5 +49,15 @@ class TestLogger(unittest.TestCase):
         logging.getLogger('pytest').handlers = []
 
 
+    def test_log_config_valid_nologger(self):
+        if os.path.isfile('/tmp/test.log'):
+            os.remove('/tmp/test.log')
+
+        logger = Logger('pytest', base_dir + '/static/config_valid_nolog.yml')
+
+        logger.log.warning('Hello')
+        self.assertFalse(os.path.isfile('/tmp/test.log'))
+
+
 if __name__ == "__main__":
     unittest.main()
